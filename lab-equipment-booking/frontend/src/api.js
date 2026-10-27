@@ -1,4 +1,4 @@
-const API = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API = import.meta.env.VITE_API_URL || 'http://localhost:5001/api';
 export async function api(path, options = {}) {
   const token = localStorage.getItem('lab_token');
   const headers = { 'Content-Type': 'application/json', ...(options.headers || {}) };
